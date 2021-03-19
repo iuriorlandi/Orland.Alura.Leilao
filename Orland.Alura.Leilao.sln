@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{98994B8E-D99B-4516-8B91-7DECDF167CD0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{0B83BD64-6A60-40AF-86F6-02E3843A5A9D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orland.Alura.Leilao.Core", "Orland.Alura.Leilao.Core\Orland.Alura.Leilao.Core.csproj", "{6CD1B944-E252-41DE-BB58-4A5D816EAFC9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6CD1B944-E252-41DE-BB58-4A5D816EAFC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CD1B944-E252-41DE-BB58-4A5D816EAFC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CD1B944-E252-41DE-BB58-4A5D816EAFC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CD1B944-E252-41DE-BB58-4A5D816EAFC9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6CD1B944-E252-41DE-BB58-4A5D816EAFC9} = {98994B8E-D99B-4516-8B91-7DECDF167CD0}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3463ABEF-F334-4A35-8B82-50B2741C4E1E}
+	EndGlobalSection
+EndGlobal
