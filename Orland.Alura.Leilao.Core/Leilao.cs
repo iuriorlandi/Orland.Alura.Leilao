@@ -28,7 +28,9 @@ namespace Orland.Alura.Leilao.Core
 
         public void TerminaPregao()
         {
-            Ganhador = Lances.Last();
+            Ganhador = Lances
+                        .OrderBy(a => a.Valor)
+                        .Last();
         }
     }
 }
