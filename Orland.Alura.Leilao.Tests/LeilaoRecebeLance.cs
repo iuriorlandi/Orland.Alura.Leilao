@@ -10,10 +10,11 @@ namespace Orland.Alura.Leilao.Tests
         [InlineData(2, new double[] { 500, 600 })]
         [InlineData(1, new double[] { 600 })]
         [InlineData(5, new double[] { 500, 600, 2000, 600, 500 })]
-        private void LeilaoFinalizadoNaoPermiteNovosLances(int qtdEsperada, double[] lances)
+        public void LeilaoFinalizadoNaoPermiteNovosLances(int qtdEsperada, double[] lances)
         {
             //Arange
-            var leilao = new Core.Leilao("Van Gogh");
+            IModalidadeLeilao modalidade = new ModalidadeMaiorValor();
+            var leilao = new Core.Leilao("Van Gogh", modalidade);
             var joao = new Interessada("João", leilao);
             var maria = new Interessada("Maria", leilao);
 
@@ -38,10 +39,11 @@ namespace Orland.Alura.Leilao.Tests
         }
 
         [Fact]
-        private void LancesConsecutivosDoMesmoInteressadoAceitaApenasOPrimeiro()
+        public void LancesConsecutivosDoMesmoInteressadoAceitaApenasOPrimeiro()
         {
             //Arange
-            var leilao = new Core.Leilao("Van Gogh");
+            IModalidadeLeilao modalidade = new ModalidadeMaiorValor();
+            var leilao = new Core.Leilao("Van Gogh", modalidade);
             var joao = new Interessada("João", leilao);
 
             leilao.IniciaPregao();
