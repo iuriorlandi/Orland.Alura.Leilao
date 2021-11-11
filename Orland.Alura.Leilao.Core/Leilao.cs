@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace Orland.Alura.Leilao.Core
 {
@@ -9,7 +8,6 @@ namespace Orland.Alura.Leilao.Core
         private Interessada _ultimoCliente;
         private IList<Lance> _lances;
         private IModalidadeLeilao _moddalidade;
-
         public IEnumerable<Lance> Lances => _lances;
         public string Peca { get; }
         public Lance Ganhador { get; private set; }
